@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectOfInterestActivity"
+    android:orientation="vertical"
+    android:background="#dfe9ef">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="관심 프로젝트"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="2dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <include
+        layout="@layout/fragment_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

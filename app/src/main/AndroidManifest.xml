@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hwjun.highhansung">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/loading_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/loading_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ProjectOfInterestActivity" />
+        <activity android:name=".ProjectInfoActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 팝업 액티비티 -->
+        <activity
+            android:name=".PopupActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".MatchingListActivity" />
+        <activity
+            android:name=".ProfilePopupActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".ChatActivity"></activity>
+    </application>
+
+</manifest>
